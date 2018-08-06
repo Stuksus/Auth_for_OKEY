@@ -5,6 +5,7 @@ bot = telebot.TeleBot(token)
 
 @bot.message_handler(content_types=["text"])
 def handel_text(message):
+    bot.send_message(message.chat.id,'[hello]')
     keyboard = telebot.InlineKeyboardMarkup()
     url_button = telebot.InlineKeyboardButton(text="Перейти на Яндекс", url="https://ya.ru")
     keyboard.add(url_button)
