@@ -1,6 +1,6 @@
 import telebot
 import re
-token = "489178856:AAGZDAq_7tgeyAtfUokfvrp4yNu9XHB8JKg"
+token = ""
 bot = telebot.TeleBot(token)
 bot.send_message(248785589,'[hello]')
 @bot.message_handler(content_types=["text"])
